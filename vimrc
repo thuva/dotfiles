@@ -10,6 +10,9 @@ set pastetoggle=<F10>   " toggle between paste and normal: for 'safer' pasting f
 set nowritebackup
 set nobackup
 
+" Buffers
+set hidden " the current buffer can be put to the background without saving
+
 " Match and search
 set incsearch "find the next match as we type the search
 set hlsearch  "hilight searches by default
