@@ -32,6 +32,7 @@ custom_prompt
 export PATH=/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH:$HOME/.rvm/bin
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r18
 
 # Load RVM function
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
