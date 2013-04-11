@@ -29,19 +29,17 @@ function custom_prompt {
 custom_prompt
 
 # Environment variables
-export PATH=/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH:$HOME/.rvm/bin
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:/usr/local/share/npm/bin:$HOME/bin:$PATH
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r18
-export NODE_PATH=/usr/local/lib/node_modules
-
-# Load RVM function
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # Bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
+
+# Init rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Aliases
 alias be='bundle exec'

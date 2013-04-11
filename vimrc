@@ -102,12 +102,18 @@ Bundle 'gmarik/vundle'
 " colorschemes
 Bundle 'molokai'
 Bundle 'inkpot'
+Bundle 'goatslacker/mango.vim'
 Bundle 'jgdavey/vim-railscasts'
 colorscheme railscasts
 
 " programming
-Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'othree/html5-syntax.vim'
+
+
+Bundle 'scrooloose/syntastic'
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
 
 " file navigation
 Bundle 'ack.vim'
