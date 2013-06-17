@@ -108,9 +108,9 @@ colorscheme railscasts
 
 " programming
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'othree/html5-syntax.vim'
-
 
 Bundle 'scrooloose/syntastic'
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
