@@ -1,5 +1,6 @@
+bin
 .DS_Store
-.rvmrc
 .ruby-version
+.rvmrc
 *.swp
 *~
