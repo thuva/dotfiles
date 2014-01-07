@@ -1,10 +1,11 @@
 " General "{{{
-set nocompatible        " disable vi compatibility
-set number              " show line numbers
-set history=256         " number of things to remember in history
-set clipboard+=unnamed  " yanks go on clipboard instead.
-set timeoutlen=250      " time to wait after ESC (default causes an annoying delay)
-set pastetoggle=<F10>   " toggle between paste and normal: for 'safer' pasting from keyboard
+set nocompatible          " disable vi compatibility
+set number                " show line numbers
+set history=256           " number of things to remember in history
+set clipboard+=unnamed    " yanks go on clipboard instead.
+set timeoutlen=250        " time to wait after ESC (default causes an annoying delay)
+set pastetoggle=<F10>     " toggle between paste and normal: for 'safer' pasting from keyboard
+set wildignore+=coverage  " ignore auto-generated directories and files
 
 " Backup
 set nowritebackup
@@ -107,6 +108,8 @@ Bundle 'jgdavey/vim-railscasts'
 colorscheme railscasts
 
 " programming
+Bundle 'Align'
+Bundle 'SQLUtilities'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'kchmck/vim-coffee-script'
@@ -119,6 +122,7 @@ let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
 Bundle 'ack.vim'
 
 Bundle 'scrooloose/nerdtree'
+let NERDTreeIgnore=['\.pyc$']
 noremap <silent> <F1> :NERDTreeToggle<CR>
 
 Bundle 'corntrace/bufexplorer'
