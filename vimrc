@@ -116,10 +116,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'othree/html5-syntax.vim'
 
 Bundle 'scrooloose/syntastic'
-let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
-
-" file navigation
-Bundle 'ack.vim'
+let g:syntastic_mode_map={'mode': 'passive', 'active_filetypes': ['ruby']}
 
 Bundle 'scrooloose/nerdtree'
 let NERDTreeIgnore=['\.pyc$']
@@ -129,6 +126,12 @@ Bundle 'corntrace/bufexplorer'
 noremap <silent> <F2> :BufExplorer<CR>
 
 Bundle 'kien/ctrlp.vim'
+Bundle 'FelikZ/ctrlp-py-matcher'
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=40
+let g:ctrlp_user_command='ag %s -l --nocolor -g ""'
+let g:ctrlp_match_func={'match': 'pymatcher#PyMatch'}
+let g:ctrlp_use_caching=0
 noremap <silent> <F3> :CtrlP<CR>
 
 filetype plugin indent on " automatically detect file types.
