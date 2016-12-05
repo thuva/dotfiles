@@ -1,7 +1,7 @@
-bin
 .bundle
 .DS_Store
 .ruby-version
 .rvmrc
 *.swp
+*.swo
 *~
