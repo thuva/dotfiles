@@ -29,17 +29,13 @@ function custom_prompt {
 custom_prompt
 
 # Environment variables
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:/usr/local/share/npm/bin:$HOME/bin:$PATH
+export BASH_SILENCE_DEPRECATION_WARNING=1
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/opt/python/libexec/bin:$HOME/bin:$PATH
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 # Bash completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
-
-# Init rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # Aliases
 alias be='bundle exec'

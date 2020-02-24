@@ -104,7 +104,7 @@ Bundle 'gmarik/vundle'
 Bundle 'molokai'
 Bundle 'inkpot'
 Bundle 'goatslacker/mango.vim'
-Bundle 'jgdavey/vim-railscasts'
+Bundle 'jpo/vim-railscasts-theme'
 colorscheme railscasts
 
 " programming
