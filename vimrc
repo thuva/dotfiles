@@ -125,7 +125,7 @@ noremap <silent> <F1> :NERDTreeToggle<CR>
 Bundle 'corntrace/bufexplorer'
 noremap <silent> <F2> :BufExplorer<CR>
 
-Bundle 'kien/ctrlp.vim'
+Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'FelikZ/ctrlp-py-matcher'
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
